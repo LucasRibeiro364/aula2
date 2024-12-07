@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // ESTRUTURA DE REPETIÇÃO - FOR
+
+        let contador = 1 
+        // for(inicial; condição; incremento)
+        for(contador; contador <= 10; contador++) {
+            //bloco de repetição
+            document.write("<h3>Digital College </h3>")
+        }
+
+        let i = 1
+        for(contador; i <= 10; i++) {
+            const restoDivisao = i % 2;
+            if(restoDivisao === 0) {
+                document.write(`<h3>Digital College - ${i}`)
+            }
+        }
+
+        let contador = 1 
+        // for(inicial; condição; incremento)
+        for(contador; contador <= 10; contador++) {
+            //bloco de repetição
+            const restoDivisao = contador % 2;
+            // IF TERNÁRIO
+            const texto = restoDivisao === 0 ? "É par" : "É ímpar";
+
+            
+            if(restoDivisao === 0) {
+                //TEMPLATE STRING
+                document.write(`<h3>Digital College - ${contador} - ${texto}</h3>`)
+            }
+        }
+
+        
+
+    </script>
+</body>
+</html>

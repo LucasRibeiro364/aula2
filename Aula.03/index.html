@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+</head>
+<body>
+    <h1>Formulário HTML</h1>
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" required/>
+        <br><br>
+        
+        <input type="text" name="nome" id="nome" required/>
+        <br><br>
+
+        <label for="senha">Senha</label>
+        <input 
+        type="password" 
+        name="senha"
+        id="senha"
+        pattern=""><br><br>
+
+        <label>Qual sua cor favorita?</label>
+        <input type="color" name="cor"><br><br>
+
+        <!-- Inicio do input de radio -->
+
+        <label>Estado Civil</label><br>
+
+        <input type="radio" name="estado_civil" id="casado" value="Casado(a)" required>
+        <label for="casado">Casado(a)</label> <br>
+
+        <input type="radio" name="estado_civil" id="solteiro" value="Solteiro(a)">
+        <label for="solteiro">Solteiro(a)</label> <br>
+
+        <input type="radio" name="estado_civil" id="viuvo" value="Viúvo(a)">
+        <label for="viuvo">Viúvo(a)</label> <br><br>
+
+        <!-- fim do input de radio -->
+
+        <!-- Inicio do input de checkbox -->
+         <label>Escolha suas linguagens</label> <br>
+
+         <input type="checkbox" name="linguagens[]" value="HTML5" id="html">
+         <label for="html">HTML5</label> <br>
+    
+         <input type="checkbox" name="linguagens[]" value="CSS3" id="css">
+         <label for="css">CSS3</label><br>
+
+         <input type="checkbox" name="linguagens[]" value="JavaScript" id="js">
+         <label for="js">JavaScript</label><br><br>
+
+        <!-- Fim do input checkbox -->
+
+        <!-- Inicio do select-->
+         <label for="cidade">Qual a sua cidade?</label><br>
+         <select name="cidade" id="cidade">
+            <option value="">Selecione a Cidade</option>
+            <option value="Aracoiaba">1 - Aracoiaba</option>
+            <option value="Fortaleza">2 - Fortaleza</option>
+            <option value="Morada Nova">3 - Morada Nova</option>
+         </select><br><br>
+        <!-- Fim do select -->
+
+        <!-- Textarea -->
+         <label for="mensagem">Mensagem</label><br>
+         <textarea name="mensagem" id="mensagem" rows="10" cols="50" placeholder="Relate aqui:"></textarea>
+
+        <br><br>
+        <input type="reset" value="limpar"><br><br>
+        <input type="submit" value="Enviar">
+
+
+    </form>
+</body>
+</html>
