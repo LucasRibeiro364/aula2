@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //OBJETOS
+        const pessoa = {
+            nome: 'Lucas',
+            idade: 21,
+            cidade: 'São Paulo',
+            profissao: 'Desenvolvedor Front-End'
+            e_casado: true,
+            endereco: {
+                rua: 'Rua das Flores',
+                numero: 123,
+                bairro: 'Guajeru',
+                cidade: 'Ceara',
+                estado: 'SP'
+            }
+        }
+
+        //ACESSANDO VALORES DO OBJETO
+        console.log(pessoa.nome);
+        console.log(pessoa.idade);
+        console.log(pessoa.cidade);
+        console.log(pessoa.profissao);
+        console.log(pessoa['idade']);
+
+        // JSON - Javascript Object Notation
+        
+        // Arrays - Dados Compostos
+        const alunos = ["Marcos", "Ana", "Jose"]
+        const numeros = [12, 20, 45, 85, 95, 65]
+        // Acessando o nome Marcos
+        console.log(alunos[0]); // Marcos
+        console.log(alunos[1]); // Ana
+        alunos[0] = "Maycon";
+        // const matriz = Array('Max', 'Max2')
+        const matriz = [
+            ['Ana', 'Marcos', 'Jose'],
+            ['Alves', 'Sousa', 'Ferreira']
+        ]
+
+        console.log(matriz[0][0]) // Ana
+        console.log(matriz[1][2]) // Ferreira
+
+
+        // Arrays com Objetos
+        const pessoa = [
+            {
+                nome:  'Marcos'
+            }
+        ]
+
+
+
+
+
+
+    </script>
+</body>
+</html>
