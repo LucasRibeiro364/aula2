@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD - Listagem</title>
+</head>
+<body>
+    <a href="form-cadastro.html">Novo Registro</a>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="listagem">  
+                      
+        </tbody>
+    </table>
+    <script>
+        function listarDados() {
+            const JsonLista = localStorage.getItem('lista')
+            if(JsonLista != null ) {
+                const alunos = JSON.parse(JsonLista)
+                // console.log(alunos)
+                const tbody = document.querySelector('#listagem')
+                tbody.innerHTML = ''
+                alunos.map((item, posicao) => {
+                    const linha = `
+                        <tr>
+                            <td>${posicao}</td>
+                            <td>${item.nome}</td>
+                            <td>${item.email}</td>
+                            <td>
+                                <button onclick = "excluirItem(${posicao})">Excluir</button>
+                            </td>
+                        </tr>
+                    `
+                    tbody.innerHTML += linha
+                })
+            }
+           
+        }
+
+        function excluirItem(posicao) {
+            const JsonLista = localStorage.getItem('lista')
+            if(JsonLista != null ) {
+                const alunos = JSON.parse(JsonLista)
+                aluno.slipe(posicao, 1)
+                localStorage.setItem('lista', JSON.stringify(alunos))
+                listarDados();
+            }
+        }
+        
+    </script>
+</body>
+</html>
