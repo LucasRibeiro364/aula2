@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 01</title>
+    <link rel="stylesheet" href="css/styles1.css">
+    <style>
+body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #FFF;
+}
+button {
+    padding: 6px;
+    background: #FFF;
+    color: #000;
+    border-radius: 5px;
+}
+    </style>
+</head>
+
+<body>
+    <div>Cor Escolhida</div>
+    <button id="btn">Alterar Cor</button>
+    <script src="js/desafio1.js"></script>
+</body>
+<script>
+    function alterarCor() {
+    const aleatorio1 = Math.floor(Math.random() * 100);
+    const aleatorio2 = Math.floor(Math.random() * 100);  
+    const aleatorio3 = Math.floor(Math.random() * 100);
+
+    const cor = `#${aleatorio1}${aleatorio2}${aleatorio3}`
+   
+    document.querySelector('div').innerHTML = cor
+    document.querySelector('body').style.backgroundColor = cor
+}
+
+const btn = document.getElementById("btn")
+btn.addEventListener('click', () => {
+    alterarCor()
+})
+
+setInterval(() => {
+    alterarCor()
+}, 5000)
+</script>
+</html>
