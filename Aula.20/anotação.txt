@@ -1,0 +1,5 @@
+
+https://reactnative.dev/
+https://expo.dev/
+expo trabalha junto com ractnative, estando na mesma rede
+EAD build
