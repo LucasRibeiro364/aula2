@@ -1,10 +1,11 @@
 import Menu from "./Menu"
 
 
-const LayoutDefault = () => {
+const LayoutDefault = ({children }) => {
     return (
         <>
             <Menu/>
+            
         </>
     )
 }
