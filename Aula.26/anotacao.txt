@@ -1,0 +1,8 @@
+ReactJS + vite
+Index.html
+main.jsx
+app.jsx
+AppRates
+BrowserRoute
+Route
+Painel/Produtos/Usuarios
